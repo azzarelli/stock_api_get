@@ -14,10 +14,10 @@ lM_timeStamp,lM_unix,lY_timeStamp,lY_unix,curr_unix, D,M,Y = sf.getdate()
 
 #TYPE options: 'stock/profile', 'quote'
 typeURL = 'quote'
-ticker = 'IBM' # str(input("Ticker Name: "))
+ticker = str(input("Ticker Name: "))
 tickerURL = '?symbol=' + ticker
 
-data_time = 'Y' #str(input('View DATA over last Year or Month [Y/M]'))
+data_time = str(input('View DATA over last Year or Month [Y/M]'))
 
 q_compare = int(input('How many are you comparing? '))
 other_tickers = str(input('Enter Ticker Names: '))
